@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-demo-app
+  description: Spring Hello World Service
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - web
+    - tanzu
+    - helloworld
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-demo-app'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
